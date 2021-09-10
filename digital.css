@@ -1,0 +1,81 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+}
+
+                             /*=============================
+                                      Navbar CSS 
+                              ==============================*/
+
+.nav{
+    
+    height: 30px;
+
+}
+.nav ul{
+    float: right;
+    margin-right: 10px;
+}
+.nav ul li{
+display: inline-block;
+margin-left: 20px;
+margin-top: 5px;
+padding-left: 10px;
+padding-right: 10px;
+
+}
+.nav ul li a{
+text-decoration: none;
+color:rgb(9, 9, 15);
+text-transform:capitalize;
+font-size: small;
+
+}
+
+
+.nav ul li a:hover{
+    color: #fff;
+    transition: .5s;
+}
+
+@media screen and ( max-width:  600px ) {
+    .nav{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .nav a{
+        color: rgb(128, 182, 226);
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+
+                           /*=====================================
+                                    Digital Clock CSS
+                            =====================================  */
+
+ #showClock{
+    height: 26px;
+    width: 200px;
+    background:linear-gradient(135deg, #15fae7, #c4b218, #a31390);
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 150px;
+    color:rgb(8, 20, 3);
+    border-radius: 2%;
+    text-align: center;
+    font-size: 2.0rem;
+    animation: animate 1.5s linear infinite;
+    border: 10px solid rgb(76, 170, 14);
+    
+}
+
+
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+} 
+
